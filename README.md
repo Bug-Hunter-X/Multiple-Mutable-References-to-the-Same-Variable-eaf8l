@@ -1,0 +1,3 @@
+# Multiple Mutable References in Rust
+
+This example demonstrates a common error in Rust related to mutable borrowing.  The code attempts to create two mutable references (`y` and `z`) to the same variable `x` simultaneously. This violates Rust's borrowing rules, which are designed to prevent data races and ensure memory safety. The compiler will produce an error to prevent this unsafe situation.  The solution shows how to correctly manage mutable references to avoid this error.
